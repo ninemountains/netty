@@ -14,5 +14,7 @@ public class TestByteBufferReadWrite {
         ByteBufferUtil.debugAll(buffer);
         buffer.compact();
         ByteBufferUtil.debugAll(buffer);
+        buffer.put(new byte[]{0x65, 0x6f});
+        ByteBufferUtil.debugAll(buffer);
     }
 }
