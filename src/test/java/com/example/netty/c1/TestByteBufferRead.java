@@ -15,5 +15,8 @@ public class TestByteBufferRead {
 
         buffer.get(new byte[4]);
         debugAll(buffer);
+
+        buffer.rewind();
+        System.out.println((char) buffer.get());
     }
 }
