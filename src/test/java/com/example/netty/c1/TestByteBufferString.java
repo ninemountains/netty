@@ -24,5 +24,14 @@ public class TestByteBufferString {
         //
         String str1 = StandardCharsets.UTF_8.decode(buffer2).toString();
         System.out.println(str1);
+
+        //
+        buffer.flip();
+        String str2 = StandardCharsets.UTF_8.decode(buffer).toString();
+        System.out.println(str1);
+
+        Integer b = null;
+        Integer a = 1;
+        System.out.println(a.equals(b));
     }
 }
